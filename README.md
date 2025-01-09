@@ -17,15 +17,15 @@ Newsify is a simple and responsive news application that fetches the latest news
 
 ## Project Structure
 
-├── index.html # The main HTML file for the application
-├── style.css # Styling for the application
-├── app.js # JavaScript for fetching news and handling user interactions
+- index.html # The main HTML file for the application
+- style.css # Styling for the application
+- app.js # JavaScript for fetching news and handling user interactions
 
 ## How to Run the Project
 
 1. Clone the repository:
 
-   git clone <repository-url>
+   git clone <https://github.com/Reek-ash/Newsify>
 
 2. Navigate to the project directory:
 
