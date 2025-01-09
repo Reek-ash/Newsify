@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsify</title>
+    <link
+      rel="shortcut icon"
+      href="./assests/mobile-app.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar container flex">
+        <a href="#" onclick="reload()" class="app-logo">
+          <img src="./assests/news.png" alt="app logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="Technology"
+              onclick="onNavItemClick('Technology')"
+            >
+              Technology
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="Finance"
+              onclick="onNavItemClick('Finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="Science"
+              onclick="onNavItemClick('Science')"
+            >
+              Science
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="Politics"
+              onclick="onNavItemClick('Politics')"
+            >
+              Politics
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="Films"
+              onclick="onNavItemClick('Films')"
+            >
+              Films
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-txt"
+            type="text"
+            class="news-input"
+            placeholder="e.g. Sports"
+          />
+          <button class="search-btn" id="search-btn">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-container container flex" id="main-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            saepe quis voluptatum quisquam vitae doloremque facilis molestias
+            quae ratione cumque!
+          </p>
+        </div>
+      </div>
+    </template>
+  </body>
+  <script src="app.js"></script>
+</html>
